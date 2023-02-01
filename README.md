@@ -17,7 +17,11 @@ devtools::install_github("BPSTechServices/bpsdataanalysis")
 
 To use **bpsdataanalysis** from RStudio, you can access the templates through
 
-`File -> New File -> R Markdown`. This will open the dialog box where you can select from one of the available templates. The gray text to the right indicates which package the template originated from.
+`File -> New File -> R Markdown`. This will open the dialog box where you can select from one of the available templates.
+
+![](man/figures/rmd_template_dialog.png){width="373"}
+
+The gray text to the right indicates which package the template originated from.
 
 ### VSCode
 
