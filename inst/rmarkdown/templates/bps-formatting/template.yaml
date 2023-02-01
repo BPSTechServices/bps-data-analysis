@@ -1,0 +1,4 @@
+name: BPS Formatting
+description: >
+   Sets up themes for graphs and provides code examples for RMD documents.
+create_dir: FALSE

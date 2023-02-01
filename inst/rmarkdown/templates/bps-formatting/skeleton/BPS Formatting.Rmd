@@ -1,0 +1,47 @@
+---
+title: "BPS Formatting: `r params$title_two`"
+author: "Smart City PDX"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+  pdf_document: 
+  beamer_presentation: default
+  powerpoint_presentation: default
+always_allow_html: yes
+params:
+  title_two: A Useful Place to Grab Code Examples
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+```
+
+```{r graph_theme}
+# Graph theme to pass to ggplot object
+smart_city_theme <-  
+  theme(
+    # plot.title = element_text(face = "bold", size = 12),
+    text = element_text(family = "sans"),
+    axis.line.x.bottom = element_line(linewidth = 1, lineend = "square"),
+    axis.line.y.left = element_line(linewidth = 1, lineend = "square"),
+    axis.title.x = element_text(face = "bold"),
+    axis.title.y = element_text(face = "bold"),
+    axis.text.x = element_text(size = 11, face = "bold", angle = 0, vjust = .03, hjust = 0.5),
+    axis.text.y = element_text(size = 11, face = "bold", angle = 0, vjust = 0.3, hjust = 1),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.ticks.x = element_line(linewidth = 1),
+    axis.ticks.y = element_line(linewidth = 1),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white")
+  )
+```
+
+```{r}
+print("asdasd")
+```
